@@ -1,10 +1,13 @@
-pipeline{
-  agent any
-  stages{
-    stage("This is my firstscript"){
-      steps{
-        sh "echo firstscript"
-      }
+pipeline {
+    agent any 
+
+    stages {
+        stage("This is my first script") {
+            steps {
+                script {
+                     echo "This is my first script"
+                }
+            }
+        }
     }
-  }
 }
