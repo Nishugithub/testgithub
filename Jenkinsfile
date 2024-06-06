@@ -1,9 +1,9 @@
 pipeline{
   agent any
   stages{
-    stage("hello"){
+    stage("This is my firstscript"){
       steps{
-        sh "echo hello world"
+        sh "echo firstscript"
       }
     }
   }
